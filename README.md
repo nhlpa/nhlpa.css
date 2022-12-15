@@ -12,13 +12,15 @@ We love HTML, simplicity and consistency. There is nothing fun or semantic about
 
 ## Installation
 
-### Via CDN
-
-`<link rel="stylesheet" href="https://raw.githubusercontent.com/nhlpa/nhlpa.css/main/nhlpa.css">`
-
 ### Manually
 
-You can self-host or copy + paste the stylesheet into your project by grabbing [nhlpa.css](https://github.com/nhlpa/nhlpa/blob/master/nhlpa.css) directly.
+We recommend that you can self-host the stylesheet in your project by downloading or copying the [nhlpa.css](https://github.com/nhlpa/nhlpa/blob/master/nhlpa.css) file directly.
+
+### Via CDN
+
+You can also reference the file via the GitHub CDN.
+
+`<link rel="stylesheet" href="https://raw.githubusercontent.com/nhlpa/nhlpa.css/main/nhlpa.css">`
 
 ## Find a bug?
 
