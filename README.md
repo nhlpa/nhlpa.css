@@ -4,7 +4,7 @@ Basic styles for HTML Elements. Providing a reasonable set of (mostly) styles wi
 
 ## Getting Started
 
-The point of the library is to encourage and support writing basic HTML, so the best way to learn is to starting writing an HTML document. You can also view the [demo](demo.html) for a full-ish reference.
+The point of the library is to encourage and support writing basic HTML, so the best way to learn is to starting writing an HTML document. You can also view the [demo](demo.html) for a full-ish reference, or the [css](nhlpa.css) file itself which is intended to be self-documenting.
 
 ## Design Goals
 
