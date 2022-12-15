@@ -18,7 +18,7 @@ We love HTML, simplicity and consistency. There is nothing fun or semantic about
 
 ### Manually
 
-You can self-host or copy + paste the stylesheet into your project by grabbing [nhlpa.cssv](https://github.com/nhlpa/nhlpa/blob/master/nhlpa.cssv) directly.
+You can self-host or copy + paste the stylesheet into your project by grabbing [nhlpa.css](https://github.com/nhlpa/nhlpa/blob/master/nhlpa.css) directly.
 
 ## Find a bug?
 
