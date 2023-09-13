@@ -7,6 +7,13 @@
   --size6: 8rem;
   --size7: 16rem;
 
+  --fontsize1: 2.5em;
+  --fontsize2: 1.875em;
+  --fontsize3: 1.4625em;
+  --fontsize4: 1.25em;
+  --fontsize5: 1em;
+  --fontsize6: .8375em;
+
   --gap: var(--size3);
 
   --black: rgb(15, 15, 15);
@@ -64,26 +71,25 @@ dt, details > summary, li, option, input, textarea, select, .topbar-menu-actions
 article, input, textarea, select, fieldset, fieldset { border: 1px solid var(--border-color) }
 blockquote, aside, article, .wrap, .wrap-xl { padding: calc(var(--gap) * .75) var(--gap) }
 aside, blockquote, tr:nth-child(odd) td { background: var(--bg-button) }
-dt, details > summary, label, legend { font-size: .9375em }
-dt, details > summary, th, label { font-weight: 600 }
+dt, details > summary, th, label { font-weight: 700 }
 pre, samp { background: var(--slate); color: var(--white) }
   h1, h2, h3, h4, h5, h6, h1 small, h2 small, h3 small, button,[role="button"], input[type="submit"], input[type="reset"], input[type="button"] { font-weight: 400 }
 
 /* Text */
-h1, h2, h3, h4, h5, h6, h1 small, h2 small, h3 small { line-height: 1 }
-h1 small, h2 small, h3 small { font-size: 60%; opacity: .6 }
-h1 { font-size: 2.5em }
-h2 { font-size: 1.875em }
-h3 { font-size: 1.4625em }
-h4 { font-size: 1.25em }
-h5 { font-size: 1em }
-h6 { font-size: .8375em }
+h1, h2, h3, h4, h5, h6 { line-height: 1 }
+h1 small, h2 small, h3 small { display: block; font-size: 60%; opacity: .6 }
+h1 { font-size: var(--fontsize1) }
+h2 { font-size: var(--fontsize2) }
+h3 { font-size: var(--fontsize3) }
+h4 { font-size: var(--fontsize4) }
+h5 { font-size: var(--fontsize5) }
+h6 { font-size: var(--fontsize6) }
 hr { height: 1px; background: var(--border-color); border-style: none }
 dd { margin: 0 0 var(--gap); white-space: pre-wrap }
 ol, ul { list-style-position: inside }
 ol > li > ol, ul > li > ul { margin: 0; padding: 0 calc(var(--gap) * 1.5) }
 table { max-width: 100%; border-collapse: collapse }
-th, td { padding: .125rem .25rem; text-align: left }
+th, td { padding: .125rem .25rem; text-align: left; vertical-align: top }
 th { border-bottom: solid .125rem var(--color-text) }
 blockquote { padding-left: var(--gap); border-left: solid .2rem var(--color-text) }
 
@@ -268,3 +274,10 @@ figcaption { margin-top: 0 }
 .ttl { text-transform: lowercase }
 .ttu { text-transform: uppercase }
 .ttn { text-transform: none }
+
+.f1 { font-size: var(--fontsize1) }
+.f2 { font-size: var(--fontsize2) }
+.f3 { font-size: var(--fontsize3) }
+.f4 { font-size: var(--fontsize4) }
+.f5 { font-size: var(--fontsize5) }
+.f6 { font-size: var(--fontsize6) }
