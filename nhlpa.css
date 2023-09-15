@@ -1,4 +1,5 @@
 ﻿:root {
+  --size0: .125rem;
   --size1: .25rem;
   --size2: .5rem;
   --size3: 1rem;
@@ -13,6 +14,7 @@
   --fontsize4: 1.25em;
   --fontsize5: 1em;
   --fontsize6: .8375em;
+  --fontsize7: .75em;
 
   --gap: var(--size3);
 
@@ -63,21 +65,21 @@ body * + * { margin-top: var(--gap) }
 .nomargin * + * { margin-top: 0 }
 
 /* Shared  */
-article, aside, pre, code, mark, samp, kbd, time, input, textarea, select, fieldset, button,[role="button"], input[type="submit"], input[type="reset"], input[type="button"], img, video { border-radius: .1875rem }
-code, mark, kbd, time, button, [role="button"], input[type="submit"], input[type="reset"], input[type="button"] { color: var(--color-button) }
-pre, samp, button, [role="button"], input[type="submit"], input[type="reset"], input[type="button"] { padding: calc(var(--gap) * .5) }
-code, kbd, button,[role="button"], input[type="submit"], input[type="reset"], input[type="button"] { background: var(--bg-button) }
+article, aside, pre, code, mark, samp, kbd, time, input, textarea, select, fieldset, button,[role='button'], input[type='submit'], input[type='reset'], input[type='button'], img, video { border-radius: .1875rem }
+code, mark, kbd, time, button, [role='button'], input[type='submit'], input[type='reset'], input[type='button'] { color: var(--color-button) }
+pre, samp, button, [role='button'], input[type='submit'], input[type='reset'], input[type='button'] { padding: calc(var(--gap) * .5) }
+code, kbd, button,[role='button'], input[type='submit'], input[type='reset'], input[type='button'] { background: var(--bg-button) }
 dt, details > summary, li, option, input, textarea, select, .topbar-menu-actions, .topbar-tray { margin: 0 }
 article, input, textarea, select, fieldset, fieldset { border: 1px solid var(--border-color) }
 blockquote, aside, article, .wrap, .wrap-xl { padding: calc(var(--gap) * .75) var(--gap) }
 aside, blockquote, tr:nth-child(odd) td { background: var(--bg-button) }
 dt, details > summary, th, label { font-weight: 700 }
 pre, samp { background: var(--slate); color: var(--white) }
-  h1, h2, h3, h4, h5, h6, h1 small, h2 small, h3 small, button,[role="button"], input[type="submit"], input[type="reset"], input[type="button"] { font-weight: 400 }
+h1, h2, h3, h4, h5, h6, h1 small, h2 small, h3 small, button,[role='button'], input[type='submit'], input[type='reset'], input[type='button'] { font-weight: 400 }
 
 /* Text */
 h1, h2, h3, h4, h5, h6 { line-height: 1 }
-h1 small, h2 small, h3 small { display: block; font-size: 60%; opacity: .6 }
+h1 small, h2 small, h3 small { display: block; font-size: var(--fontsize7); opacity: .6 }
 h1 { font-size: var(--fontsize1) }
 h2 { font-size: var(--fontsize2) }
 h3 { font-size: var(--fontsize3) }
@@ -86,16 +88,16 @@ h5 { font-size: var(--fontsize5) }
 h6 { font-size: var(--fontsize6) }
 hr { height: 1px; background: var(--border-color); border-style: none }
 dd { margin: 0 0 var(--gap); white-space: pre-wrap }
-ol, ul { list-style-position: inside }
+ol, ul { list-style-position: inside; margin: 0 0 0 var(--gap) }
 ol > li > ol, ul > li > ul { margin: 0; padding: 0 calc(var(--gap) * 1.5) }
-table { max-width: 100%; border-collapse: collapse }
-th, td { padding: .125rem .25rem; text-align: left; vertical-align: top }
-th { border-bottom: solid .125rem var(--color-text) }
+table { width: 100%; max-width: 100%; border-collapse: collapse }
+th, td { padding: var(--size0) var(--size1); text-align: left; vertical-align: top }
+th { border-bottom: solid var(--size0) var(--color-text) }
 blockquote { padding-left: var(--gap); border-left: solid .2rem var(--color-text) }
 
 /* Inline Text */
 a { color: var(--color-link) }
-code, mark, kbd, time { padding: 0 .25rem }
+code, mark, kbd, time { padding: 0 var(--size1) }
 code, samp, kbd { font-family: monospace }
 mark, time { color: var(--black) }
 mark { background: var(--gold) }
@@ -109,15 +111,17 @@ pre > code { background: inherit; color: inherit }
 [disabled] { cursor: not-allowed }
 label, input, textarea, select, fieldset, button { line-height: 1 !important }
 input, button, textarea, select, fieldset { font: inherit }
-input, textarea, select { display: inline-block; background: var(--bg-body) }
-input, textarea { padding: .3125rem .5rem }
+textarea, select, input:not([type='submit']):not([type='checkbox']):not([type='radio']):not([type='hidden']) { display: block; width: 100%; background: var(--bg-body) }
+input, textarea { padding: .3125rem var(--size2) }
 input[type=checkbox], input[type=radio] { vertical-align: middle; position: relative; bottom: 2px }
-label { display: block; margin: .5rem 0 .25rem }
-fieldset { padding: .5rem; margin: 0 0 1rem }
-select { padding: .25rem .5rem }
+label { display: block; margin-bottom: var(--size1) }
+form * + label { margin-top: var(--size2) }
+label > *:first-child { margin: var(--size1) 0 0 }
+fieldset { padding: var(--size2); margin: 0 0 1rem }
+select { padding: var(--size1) var(--size2) }
 textarea { width: 100%; resize: vertical }
 fieldset { max-width: -webkit-fill-available }
-button,[role="button"], input[type="submit"], input[type="reset"], input[type="button"] { display: inline-block; margin: 0 calc(var(--gap) * .5) 0 0; line-height:1; text-decoration: none; background: var(--bg-button); border: 0; cursor: pointer }
+button,[role='button'], input[type='submit'], input[type='reset'], input[type='button'] { display: inline-block; margin: 0 calc(var(--gap) * .5) 0 0; line-height:1; text-decoration: none; background: var(--bg-button); border: 0; cursor: pointer }
 
 /* Media */
 img, picture, video, audio, canvas, svg { display: block; max-width: 100% }
@@ -138,7 +142,7 @@ figcaption { margin-top: 0 }
 .toggle-hidden { position: absolute; left: -9999px }
 .toggle:checked + * { display: block }
 
-.topbar { border-bottom: 1px solid var(--border-color); box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%) }
+.topbar { border-bottom: 1px solid var(--border-color); box-shadow: 0 0var(--size1) 0.75rem rgb(0 0 0 / 5%) }
 .topbar-menu { display: flex; align-items: center }
 .topbar-menu a { color: inherit }
 .topbar-menu-brand { display: block; width: clamp(3em, 4em, 4em); height: clamp(3em, 4em, 4em); background: var(--logo) }
@@ -151,6 +155,24 @@ figcaption { margin-top: 0 }
 .di { display: inline }
 .db { display: block }
 .dib { display: inline-block }
+.df { display: flex }
+
+.tl { text-align: left }
+.tr { text-align: right }
+.tc { text-align: center }
+.tj { text-align: justify }
+.ttc { text-transform: capitalize }
+.ttl { text-transform: lowercase }
+.ttu { text-transform: uppercase }
+.ttn { text-transform: none }
+
+.f1 { font-size: var(--fontsize1) }
+.f2 { font-size: var(--fontsize2) }
+.f3 { font-size: var(--fontsize3) }
+.f4 { font-size: var(--fontsize4) }
+.f5 { font-size: var(--fontsize5) }
+.f6 { font-size: var(--fontsize6) }
+.f7 { font-size: var(--fontsize7) }
 
 .w25 { width: 25% }
 .w33 { width: 33.333% }
@@ -181,103 +203,57 @@ figcaption { margin-top: 0 }
 .ma2 { margin: var(--size2) }
 .ma3 { margin: var(--size3) }
 .ma4 { margin: var(--size4) }
-.ma5 { margin: var(--size5) }
-.ma6 { margin: var(--size6) }
-.ma7 { margin: var(--size7) }
 
 .mt0 { margin-top: 0 }
 .mt1 { margin-top: var(--size1) }
 .mt2 { margin-top: var(--size2) }
 .mt3 { margin-top: var(--size3) }
 .mt4 { margin-top: var(--size4) }
-.mt5 { margin-top: var(--size5) }
-.mt6 { margin-top: var(--size6) }
-.mt7 { margin-top: var(--size7) }
 
 .mr0 { margin-right: 0 }
 .mr1 { margin-right: var(--size1) }
 .mr2 { margin-right: var(--size2) }
 .mr3 { margin-right: var(--size3) }
 .mr4 { margin-right: var(--size4) }
-.mr5 { margin-right: var(--size5) }
-.mr6 { margin-right: var(--size6) }
-.mr7 { margin-right: var(--size7) }
 
 .mb0 { margin-bottom: 0 }
 .mb1 { margin-bottom: var(--size1) }
 .mb2 { margin-bottom: var(--size2) }
 .mb3 { margin-bottom: var(--size3) }
 .mb4 { margin-bottom: var(--size4) }
-.mb5 { margin-bottom: var(--size5) }
-.mb6 { margin-bottom: var(--size6) }
-.mb7 { margin-bottom: var(--size7) }
 
 .ml0 { margin-left: 0 }
 .ml1 { margin-left: var(--size1) }
 .ml2 { margin-left: var(--size2) }
 .ml3 { margin-left: var(--size3) }
 .ml4 { margin-left: var(--size4) }
-.ml5 { margin-left: var(--size5) }
-.ml6 { margin-left: var(--size6) }
-.ml7 { margin-left: var(--size7) }
 
 .pa0 { padding: 0 }
 .pa1 { padding: var(--size1) }
 .pa2 { padding: var(--size2) }
 .pa3 { padding: var(--size3) }
 .pa4 { padding: var(--size4) }
-.pa5 { padding: var(--size5) }
-.pa6 { padding: var(--size6) }
-.pa7 { padding: var(--size7) }
 
 .pt0 { padding-top: 0 }
 .pt1 { padding-top: var(--size1) }
 .pt2 { padding-top: var(--size2) }
 .pt3 { padding-top: var(--size3) }
 .pt4 { padding-top: var(--size4) }
-.pt5 { padding-top: var(--size5) }
-.pt6 { padding-top: var(--size6) }
-.pt7 { padding-top: var(--size7) }
 
 .pr0 { padding-right: 0 }
 .pr1 { padding-right: var(--size1) }
 .pr2 { padding-right: var(--size2) }
 .pr3 { padding-right: var(--size3) }
 .pr4 { padding-right: var(--size4) }
-.pr5 { padding-right: var(--size5) }
-.pr6 { padding-right: var(--size6) }
-.pr7 { padding-right: var(--size7) }
 
 .pb0 { padding-bottom: 0 }
 .pb1 { padding-bottom: var(--size1) }
 .pb2 { padding-bottom: var(--size2) }
 .pb3 { padding-bottom: var(--size3) }
 .pb4 { padding-bottom: var(--size4) }
-.pb5 { padding-bottom: var(--size5) }
-.pb6 { padding-bottom: var(--size6) }
-.pb7 { padding-bottom: var(--size7) }
 
 .pl0 { padding-left: 0 }
 .pl1 { padding-left: var(--size1) }
 .pl2 { padding-left: var(--size2) }
 .pl3 { padding-left: var(--size3) }
 .pl4 { padding-left: var(--size4) }
-.pl5 { padding-left: var(--size5) }
-.pl6 { padding-left: var(--size6) }
-.pl7 { padding-left: var(--size7) }
-
-.tl { text-align: left }
-.tr { text-align: right }
-.tc { text-align: center }
-.tj { text-align: justify }
-.ttc { text-transform: capitalize }
-.ttl { text-transform: lowercase }
-.ttu { text-transform: uppercase }
-.ttn { text-transform: none }
-
-.f1 { font-size: var(--fontsize1) }
-.f2 { font-size: var(--fontsize2) }
-.f3 { font-size: var(--fontsize3) }
-.f4 { font-size: var(--fontsize4) }
-.f5 { font-size: var(--fontsize5) }
-.f6 { font-size: var(--fontsize6) }
