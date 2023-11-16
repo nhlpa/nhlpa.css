@@ -129,23 +129,3 @@ figcaption { margin-top: 0 }
 @media screen and (min-width: 40rem) {
   aside { float: right; width: 33.333%; margin-left: var(--gap); margin-bottom: var(--gap) }
 }
-
-/* Components */
-.wrap-sm, .wrap-md, .wrap, .wrap-lg, .wrap-xl { margin-left: auto; margin-right: auto; padding: var(--size2) }
-.wrap-sm { max-width: 22.5rem }
-.wrap-md { max-width: 40rem }
-.wrap { max-width: 60rem }
-.wrap-lg { max-width: 80rem }
-.wrap-xl { max-width: 120rem }
-
-.toggle + * { display: none }
-.toggle-hidden { position: absolute; left: -9999px }
-.toggle:checked + * { display: block }
-
-.topbar { border-bottom: 1px solid var(--border-color); box-shadow: 0 0var(--size1) 0.75rem rgb(0 0 0 / 5%) }
-.topbar-menu { display: flex; align-items: center }
-.topbar-menu a { color: inherit }
-.topbar-menu-brand { display: block; width: clamp(3em, 4em, 4em); height: clamp(3em, 4em, 4em); background: var(--logo) }
-.topbar-menu-actions { flex-grow: 1; text-align: right }
-
-.logo { background: var(--logo) }

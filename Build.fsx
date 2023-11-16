@@ -4,16 +4,17 @@ open System.Text
 open System.Text.RegularExpressions
 
 let breakpoints =
-    [ "-sm", "22.5rem"
-      "-md", "40rem"
-      "-lg", "80rem"
-      "-xl", "120rem" ]
+    [
+      "-lg", "64em"
+    ]
 
 let sb = StringBuilder()
 let baseCss = File.ReadAllText (Path.Join(__SOURCE_DIRECTORY__, "nhlpa.base.css"))
+let componentsCss = File.ReadAllText (Path.Join(__SOURCE_DIRECTORY__, "nhlpa.components.css"))
 let atomsCss = File.ReadAllText (Path.Join(__SOURCE_DIRECTORY__, "nhlpa.atoms.css"))
 
 sb.AppendLine(baseCss) |> ignore
+sb.AppendLine(componentsCss) |> ignore
 sb.AppendLine(atomsCss) |> ignore
 
 let breakpointCssAtoms breakpointSuffix =
