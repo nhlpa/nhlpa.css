@@ -131,11 +131,11 @@ figcaption { margin-top: 0 }
 }
 
 /* Components */
-.wrap-sm, .wrap-md, .wrap, .wrap-lg, .wrap-xl { margin-left: auto; margin-right: auto; padding: var(--size2) }
-.wrap-sm { max-width: 22.5rem }
-.wrap-md { max-width: 40rem }
+.wrap-s, .wrap-m, .wrap, .wrap-l, .wrap-xl { margin-left: auto; margin-right: auto; padding: var(--size2) }
+.wrap-s { max-width: 22.5rem }
+.wrap-m { max-width: 40rem }
 .wrap { max-width: 60rem }
-.wrap-lg { max-width: 80rem }
+.wrap-l { max-width: 80rem }
 .wrap-xl { max-width: 120rem }
 
 .toggle + * { display: none }
