@@ -5,7 +5,7 @@ open System.Text.RegularExpressions
 
 let breakpoints =
     [
-      "-lg", "64em"
+      "-l", "64em"
     ]
 
 let sb = StringBuilder()
