@@ -1,6 +1,6 @@
 # 🏒NHLPA.css
 
-Basic styles for HTML Elements. Providing a reasonable set of (mostly) styles without classes. Including a few basic components, utility classes (we call them "atoms").
+Basic styles for HTML Elements. Providing a reasonable set of (mostly) styles without classes. Including a few basic components, utility classes.
 
 ![Screenshot of NHLPA.css](demo.png)
 
