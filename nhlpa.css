@@ -118,11 +118,11 @@ figcaption { margin-top: 0 }
 }
 
 /* Components */
-.wrap-s, .wrap-m, .wrap, .wrap-l, .wrap-xl { margin-left: auto; margin-right: auto; padding: var(--size2) }
-.wrap-s { max-width: 22.5rem }
-.wrap-m { max-width: 40rem }
+.wrap-sm, .wrap-md, .wrap, .wrap-lg, .wrap-xl { margin-left: auto; margin-right: auto; padding: var(--size2) }
+.wrap-sm { max-width: 22.5rem }
+.wrap-md { max-width: 40rem }
 .wrap { max-width: 60rem }
-.wrap-l { max-width: 80rem }
+.wrap-lg { max-width: 80rem }
 .wrap-xl { max-width: 120rem }
 
 .toggle + * { display: none }
@@ -447,8 +447,7 @@ figcaption { margin-top: 0 }
   .fl-l { float: left }
   .fr-l { float: right }
   .cf-l { clear: both }
-}
-@media screen and (min-width: 64em) {
+
 /* Flexbox */
   .flex-l { display: flex }
   .inline-flex-l { display: inline-flex }
@@ -503,8 +502,7 @@ figcaption { margin-top: 0 }
 
   .flex-shrink-0-l { flex-shrink: 0 }
   .flex-shrink-1-l { flex-shrink: 1 }
-}
-@media screen and (min-width: 64em) {
+
 /* Sizing */
   .w-auto-l { width: auto }
   .w-inherit-l { width: inherit }
@@ -559,8 +557,7 @@ figcaption { margin-top: 0 }
   .vh-75-l {  height:  75vh }
   .vh-100-l { height: 100vh }
   .min-vh-100-l { min-height: 100vh }
-}
-@media screen and (min-width: 64em) {
+
 /* Spacing */
   .ma0-l { margin: 0 }
   .ma1-l { margin: var(--size1) }
@@ -687,8 +684,7 @@ figcaption { margin-top: 0 }
   .pl5-l { padding-left: var(--size5) }
   .pl6-l { padding-left: var(--size6) }
   .pl7-l { padding-left: var(--size7) }
-}
-@media screen and (min-width: 64em) {
+
 /* Text */
   .f1-l { font-size: var(--fontsize1) }
   .f2-l { font-size: var(--fontsize2) }

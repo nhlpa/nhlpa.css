@@ -24,7 +24,6 @@ let cssFiles =
         "nhlpa.atoms.text.css"
     ]
 
-// process base styles
 cssFiles
 |> List.map (fun cssPath ->
     let cssContent = File.ReadAllText(Path.Join(__SOURCE_DIRECTORY__, cssPath))
@@ -32,13 +31,15 @@ cssFiles
     appendLine ()
     cssPath, cssContent)
 |> List.filter (fun (cssPath, _) -> cssPath.Contains("atoms"))
-|> List.iter (fun (_, cssContent) ->
+|> List.map snd
+|> String.concat "\n\n"
+|> fun breakpointCss ->
     let breakpointCssAtoms breakpointSuffix =
-        Regex.Replace(cssContent, @"^(\.[\w\-\d]+)", $"  $1{breakpointSuffix}", RegexOptions.Multiline)
+        Regex.Replace(breakpointCss, @"^(\.[\w\-\d]+)", $"  $1{breakpointSuffix}", RegexOptions.Multiline)
 
     for (suffix, width) in breakpoints do
         append $"@media screen and (min-width: {width}) {{"
         append (breakpointCssAtoms suffix)
-        append "}")
+        append "}"
 
 File.WriteAllText (Path.Join(__SOURCE_DIRECTORY__, "nhlpa.css"), sb.ToString())
