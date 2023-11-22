@@ -3,27 +3,42 @@ open System.IO
 open System.Text
 open System.Text.RegularExpressions
 
+let sb = StringBuilder()
+let append (x : string) = sb.AppendLine(x) |> ignore
+let appendLine () = sb.AppendLine() |> ignore
+
+
 let breakpoints =
     [
       "-l", "64em"
     ]
 
-let sb = StringBuilder()
-let baseCss = File.ReadAllText (Path.Join(__SOURCE_DIRECTORY__, "nhlpa.base.css"))
-let componentsCss = File.ReadAllText (Path.Join(__SOURCE_DIRECTORY__, "nhlpa.components.css"))
-let atomsCss = File.ReadAllText (Path.Join(__SOURCE_DIRECTORY__, "nhlpa.atoms.css"))
+let cssFiles =
+    [
+        "nhlpa.base.css"
+        "nhlpa.components.css"
+        "nhlpa.atoms.display.css"
+        "nhlpa.atoms.flexbox.css"
+        "nhlpa.atoms.sizing.css"
+        "nhlpa.atoms.spacing.css"
+        "nhlpa.atoms.text.css"
+    ]
 
-sb.AppendLine(baseCss) |> ignore
-sb.AppendLine(componentsCss) |> ignore
-sb.AppendLine(atomsCss) |> ignore
+// process base styles
+cssFiles
+|> List.map (fun cssPath ->
+    let cssContent = File.ReadAllText(Path.Join(__SOURCE_DIRECTORY__, cssPath))
+    append cssContent
+    appendLine ()
+    cssPath, cssContent)
+|> List.filter (fun (cssPath, _) -> cssPath.Contains("atoms"))
+|> List.iter (fun (_, cssContent) ->
+    let breakpointCssAtoms breakpointSuffix =
+        Regex.Replace(cssContent, @"^(\.[\w\-\d]+)", $"  $1{breakpointSuffix}", RegexOptions.Multiline)
 
-let breakpointCssAtoms breakpointSuffix =
-    Regex.Replace(atomsCss, @"^(\.[\w\-\d]+)", $"  $1{breakpointSuffix}", RegexOptions.Multiline)
-
-for (suffix, width) in breakpoints do
-    sb.AppendLine() |> ignore
-    sb.AppendLine($"@media screen and (min-width: {width}) {{") |> ignore
-    sb.AppendLine(breakpointCssAtoms suffix) |> ignore
-    sb.AppendLine("}") |> ignore
+    for (suffix, width) in breakpoints do
+        append $"@media screen and (min-width: {width}) {{"
+        append (breakpointCssAtoms suffix)
+        append "}")
 
 File.WriteAllText (Path.Join(__SOURCE_DIRECTORY__, "nhlpa.css"), sb.ToString())
