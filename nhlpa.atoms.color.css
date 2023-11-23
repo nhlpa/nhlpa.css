@@ -1,0 +1,23 @@
+.black { color: var(--black) }
+.blue { color: var(--blue) }
+.darkgray { color: var(--darkgray) }
+.gold { color: var(--gold) }
+.gray { color: var(--gray) }
+.lightblue { color: var(--lightblue) }
+.midblue { color: var(--midblue) }
+.nearwhite { color: var(--nearwhite) }
+.silver { color: var(--silver) }
+.slate { color: var(--slate) }
+.white { color: var(--white) }
+
+.bg-black { background-color: var(--black) }
+.bg-blue { background-color: var(--blue) }
+.bg-darkgray { background-color: var(--darkgray) }
+.bg-gold { background-color: var(--gold) }
+.bg-gray { background-color: var(--gray) }
+.bg-lightblue { background-color: var(--lightblue) }
+.bg-midblue { background-color: var(--midblue) }
+.bg-nearwhite { background-color: var(--nearwhite) }
+.bg-silver { background-color: var(--silver) }
+.bg-slate { background-color: var(--slate) }
+.bg-white { background-color: var(--white) }
