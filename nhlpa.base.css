@@ -94,7 +94,7 @@ ol > li > ol, ul > li > ul { margin: 0; padding: 0 calc(var(--gap) * 1.5) }
 table { width: 100%; max-width: 100%; border-collapse: collapse }
 th, td { padding: var(--size0) var(--size1); text-align: left; vertical-align: top }
 th { border-bottom: solid var(--size0) var(--color-text) }
-blockquote { padding-left: var(--gap); border-left: solid .2rem var(--color-text) }
+blockquote { padding-left: var(--gap); border-left: solid .25rem var(--color-text) }
 
 /* Inline Text */
 a { color: var(--color-link) }

@@ -7,6 +7,7 @@
 .ma5 { margin: var(--size5) }
 .ma6 { margin: var(--size6) }
 .ma7 { margin: var(--size7) }
+.center { margin-right: auto; margin-left: auto }
 
 .mv0 { margin-top: 0; margin-bottom: 0 }
 .mv1 { margin-top: var(--size1); margin-bottom: var(--size1) }

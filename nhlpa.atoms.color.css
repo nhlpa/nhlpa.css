@@ -21,3 +21,15 @@
 .bg-silver { background-color: var(--silver) }
 .bg-slate { background-color: var(--slate) }
 .bg-white { background-color: var(--white) }
+
+.b--black { border-color: var(--black) }
+.b--blue { border-color: var(--blue) }
+.b--darkgray { border-color: var(--darkgray) }
+.b--gold { border-color: var(--gold) }
+.b--gray { border-color: var(--gray) }
+.b--lightblue { border-color: var(--lightblue) }
+.b--midblue { border-color: var(--midblue) }
+.b--nearwhite { border-color: var(--nearwhite) }
+.b--silver { border-color: var(--silver) }
+.b--slate { border-color: var(--slate) }
+.b--white { border-color: var(--white) }

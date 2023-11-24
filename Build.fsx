@@ -16,6 +16,7 @@ let cssFiles =
         "nhlpa.atoms.sizing.css"
         "nhlpa.atoms.spacing.css"
         "nhlpa.atoms.text.css"
+        "nhlpa.atoms.borders.css"
         "nhlpa.atoms.color.css"
     ]
 
