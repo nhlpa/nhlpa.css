@@ -89,7 +89,7 @@ h5 { font-size: var(--fontsize5) }
 h6 { font-size: var(--fontsize6) }
 hr { height: 1px; background: var(--border-color); border-style: none }
 dd { margin: 0 0 var(--gap); white-space: pre-wrap }
-ol, ul { margin: 0 0 0 var(--gap) }
+ol, ul { list-style-position: inside; margin: var(--size1) 0 0 var(--size2) }
 ol > li > ol, ul > li > ul { margin: 0; padding: 0 calc(var(--gap) * 1.5) }
 table { width: 100%; max-width: 100%; border-collapse: collapse }
 th, td { padding: var(--size0) var(--size1); text-align: left; vertical-align: top }
