@@ -7,15 +7,15 @@
 .f6 { font-size: var(--fontsize6) }
 .f7 { font-size: var(--fontsize7) }
 
-.fw1    { font-weight: 100 }
-.fw2    { font-weight: 200 }
-.fw3    { font-weight: 300 }
-.fw4    { font-weight: 400 }
-.fw5    { font-weight: 500 }
-.fw6    { font-weight: 600 }
-.fw7    { font-weight: 700 }
-.fw8    { font-weight: 800 }
-.fw9    { font-weight: 900 }
+.fw1 { font-weight: 100 }
+.fw2 { font-weight: 200 }
+.fw3 { font-weight: 300 }
+.fw4 { font-weight: 400 }
+.fw5 { font-weight: 500 }
+.fw6 { font-weight: 600 }
+.fw7 { font-weight: 700 }
+.fw8 { font-weight: 800 }
+.fw9 { font-weight: 900 }
 
 .tl { text-align: left }
 .tr { text-align: right }
@@ -27,6 +27,6 @@
 .ttu { text-transform: uppercase }
 .ttn { text-transform: none }
 
-.lh-solid { line-height: 1 }
-.lh-title { line-height: 1.25 }
-.lh-copy  { line-height: 1.5 }
+.lh-solid { line-height: var(--lh-solid) }
+.lh-title { line-height: var(--lh-title) }
+.lh-copy  { line-height: var(--lh-copy) }

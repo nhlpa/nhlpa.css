@@ -1,6 +1,6 @@
 /* Components */
 .wrap-sm, .wrap-md, .wrap, .wrap-lg, .wrap-xl { margin-left: auto; margin-right: auto; padding: var(--size2) }
-.wrap-sm { max-width: 22.5rem }
+.wrap-sm { max-width: 30rem }
 .wrap-md { max-width: 40rem }
 .wrap { max-width: 60rem }
 .wrap-lg { max-width: 80rem }
@@ -15,5 +15,6 @@
 .topbar-menu a { color: inherit }
 .topbar-menu-brand { display: block; width: clamp(3em, 4em, 4em); height: clamp(3em, 4em, 4em); background: var(--logo) }
 .topbar-menu-actions { flex-grow: 1; text-align: right }
+.topbar-menu-actions, .topbar-tray { margin: 0 }
 
 .logo { background: var(--logo) }
