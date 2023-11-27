@@ -24,13 +24,13 @@
   --lh-copy: 1.5;
 
   --bg-body: snow;
-  --bg-button: silver;
+  --bg-button: lightgray;
 
   --color-text: black;
-  --color-link: blue;
-  --color-button: var(--color-text);
+  --color-link: dodgerblue;
+  --color-button: black;
 
-  --border-color: silver;
+  --border-color: rgb(0 0 0 / 10%);
 
   --logo: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20273%20274%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M-1-1h275v276H-1z%22%2F%3E%3Cpath%20d%3D%22m60%20214.8-14.1%2040.9-7.4-40.9h-16L5%20265.8h10.5l14-41%207.4%2041h16l17.5-51zm61.9%200h-11.4l-7.2%2021H81.2l7.2-21H77l-17.5%2051h11.4l7.6-22.1h22.1L93%20265.8h11.4l5.6-16.3%209.7-28.1zm6.2%2034.7%2011.9-34.7h-11.4l-2.3%206.6-9.6%2028.1-5.6%2016.3h38.6l2.7-8h-27.2zm75.6-34.7h-32.5l-4%2011.7h33c5.9%200%205.7%201.6%203.8%206.8-2.3%206.5-4.9%207.1-10.9%207.3h-15.8l4.2-11.9h-15l-7.2%2020.7-5.6%2016.4h15l4.6-13.5h16.9c15.8%200%2021-4.9%2026.1-19%204.8-13.2%201.5-18.5-12.6-18.5zm60.3%2030.7h-28.9l7-20.4%206.3%2018.2h14.9l-9.9-28.5h-22.7l-17.5%2051h14.9l3-8.6h22l2.9%208.6h14.9zM26.9%20182.2c.2%200%201.8.5%202.5.5.8-1.5%201.9-2.7%203-2.7h22c1.6%200%203-.5%204.4-1.2%202.1-1.1%203.9-2.8%205.1-4.1l38.8-46.4c6.1-6.8%205.1-14.8%202.7-16.9-9-7.8-10.2-18-13.3-28.7-2.3-8-7.1-17.7-1.9-26.1%200%200%209.4-13.4%2011.2-14.7l.1-.1v-.1c-2.8-2.2-4.4-5.6-5.2-9-.4%200-.8.1-1.2.1-1.2%200-2.2-.3-2.7-1.5-1-2.7-1.4-8.1-1.3-8.6%200-1.6.2-4%201-5.8%201.3-3%202.6-5.5%204.3-7.2%201.3-1.3%202.8-2.4%204.1-3.1-.5%200-.9-.1-1.3-.1-4.4%200-6.6%202-8.9%204.8a32.7%2032.7%200%200%200-4.6%207.4c-.8%201.8-1%204.2-1%205.8%200%20.5.3%205.8%201.3%208.6.5%201.2%201.5%201.5%202.7%201.5.4%200%20.8%200%201.2-.1.9%203.4%201.9%206.8%204.7%209v.1C92.8%2044.8%2084%2058.3%2084%2058.3c-5.2%208.5-.3%2018.1%201.9%2026.1%201.7%206%208.2%2025.7%2011.7%2028.7%202.5%202.1%204.8%207.9-1.4%2014.7L64%20166.4c-1.2%201.3-3.1%203.1-5.3%204.2-1.2.6-2.6%201-3.9%201l-23.2-.1c-1.2%200-2.3%201.3-3.2%202.9-.4.8-.9%201.7-1.3%202.5-.6%201.3-2.2%204.7-.2%205.3z%22%20class%3D%22a%22%2F%3E%3Cpath%20d%3D%22M97.7%2023.8c0%20.5%201.3%205.8%202.3%208.6.7%201.6%202.1%201.6%203.9%201.4.9%203.4%202.4%206.8%205.2%209v.1c-1.8%201.2-11.2%2014.7-11.2%2014.7-5.2%208.5-.3%2018.1%201.9%2026.1%203%2010.7%204.3%2020.9%2013.3%2028.7%202.3%202%204.8%207.3.5%2013.6l-48.3%2058c-.7.8-1.7%201.8-2.9%202.6-1.9%201.4-4.2%202.7-6.7%202.7l-23.2-.1c-1.2%200-2.2%201.2-3.1%202.8l-.1.1c-.4.8-.9%201.7-1.3%202.5-.6%201.3-2.4%205.3.5%205.3h30.8c2.1%200%204.1-1.2%205.7-2.7.4-.4%2046.1-54.9%2046.1-54.9%200%202.7.8%2011.8%201.5%2013.5%202.1%205.6%2019%2021.5%2023.4%2027.4%200%200-11.4%205.3-12.1%207.1-.7%201.8-.1%204.4.3%205.1.4.7%201.5%201.3%201.7%201.4.4.7%201.5%203%203.5%203h31.1c1.2-.1%201.4-.7%201.1-1.1l-3.2-6.2-.1-1.2c.2-1%20.9-1.8.7-3.1%200%200-11.6-28-12.5-29.9-.7-1.5-4.5-7.9-4.5-7.9.9-.6%2014.2-19%2019.2-23.9%202.2%203.6%208.4%2018.5%2015.3%2024.1%2016.6%2013.3%2038.8%2033.3%2038.8%2033.3-3.7%201.3-6%204.8-6.5%206.3-.8%202.4-.2%204.4.3%205.1.5.7%201.8%201.5%201.8%201.5.3.4%201.4%203.1%203.6%203.1H246c1.8%200%202.1-.7%201.8-1.1l-5.4-7.5c-.1-1%20.3-1.8-.3-3.1%200%200-15.7-26.2-21.5-34-7.3-9.5-17.8-17.5-19.2-25.1-1.4-7.6-6.8-30.9-14.6-41.2-8-10.7-3.6-14.6-1.3-17.5.5-.6%206.2-7.4%207.1-8.9%201.3-1.9%203.9-7.4%204.1-12.4.1-1.5-.1-3-.5-4.4-.7-2.1-2.2-4-4.2-5.9-4.8-4.6-19-17.4-30.7-17.5-3.9%200-5.6-.3-10.9.8-4.3.9-6.6%201.7-10.5%203.6%200%200-6.1%202.8-7.8%202.8%200%200-3.2.5-3.5-5.1-.3-4.6-.3-8.1-1-9.6-.3-.8-.6-1.5-1-2.2-.7-1.2-1.5-2.2-2.4-2.9-1.4-1.1-3-1.6-5.1-2.1l-1.7-.3c-3.3-.4-9.1%201-11.2%202.7-1.6%201.3-6.3%205.9-7.5%208.8-.7%202-.9%204.4-1%206z%22%20class%3D%22a%22%2F%3E%3C%2Fsvg%3E)
 }
@@ -38,13 +38,10 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-body: black;
-    --bg-button: lightgray;
 
     --color-text: snow;
-    --color-link: dodgerblue;
-    --color-button: black;
 
-    --border-color: gray;
+    --border-color: rgb(255 255 255 / 10%);
 
     --logo: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20273%20274%22%3E%3Cpath%20fill%3D%22none%22%20d%3D%22M-1-1h275v276H-1z%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22m60%20214.8-14.1%2040.9-7.4-40.9h-16L5%20265.8h10.5l14-41%207.4%2041h16l17.5-51zm61.9%200h-11.4l-7.2%2021H81.2l7.2-21H77l-17.5%2051h11.4l7.6-22.1h22.1L93%20265.8h11.4l5.6-16.3%209.7-28.1zm6.2%2034.7%2011.9-34.7h-11.4l-2.3%206.6-9.6%2028.1-5.6%2016.3h38.6l2.7-8h-27.2zm75.6-34.7h-32.5l-4%2011.7h33c5.9%200%205.7%201.6%203.8%206.8-2.3%206.5-4.9%207.1-10.9%207.3h-15.8l4.2-11.9h-15l-7.2%2020.7-5.6%2016.4h15l4.6-13.5h16.9c15.8%200%2021-4.9%2026.1-19%204.8-13.2%201.5-18.5-12.6-18.5zm60.3%2030.7h-28.9l7-20.4%206.3%2018.2h14.9l-9.9-28.5h-22.7l-17.5%2051h14.9l3-8.6h22l2.9%208.6h14.9zM26.9%20182.2c.2%200%201.8.5%202.5.5.8-1.5%201.9-2.7%203-2.7h22c1.6%200%203-.5%204.4-1.2%202.1-1.1%203.9-2.8%205.1-4.1l38.8-46.4c6.1-6.8%205.1-14.8%202.7-16.9-9-7.8-10.2-18-13.3-28.7-2.3-8-7.1-17.7-1.9-26.1%200%200%209.4-13.4%2011.2-14.7l.1-.1v-.1c-2.8-2.2-4.4-5.6-5.2-9-.4%200-.8.1-1.2.1-1.2%200-2.2-.3-2.7-1.5-1-2.7-1.4-8.1-1.3-8.6%200-1.6.2-4%201-5.8%201.3-3%202.6-5.5%204.3-7.2%201.3-1.3%202.8-2.4%204.1-3.1-.5%200-.9-.1-1.3-.1-4.4%200-6.6%202-8.9%204.8a32.7%2032.7%200%200%200-4.6%207.4c-.8%201.8-1%204.2-1%205.8%200%20.5.3%205.8%201.3%208.6.5%201.2%201.5%201.5%202.7%201.5.4%200%20.8%200%201.2-.1.9%203.4%201.9%206.8%204.7%209v.1C92.8%2044.8%2084%2058.3%2084%2058.3c-5.2%208.5-.3%2018.1%201.9%2026.1%201.7%206%208.2%2025.7%2011.7%2028.7%202.5%202.1%204.8%207.9-1.4%2014.7L64%20166.4c-1.2%201.3-3.1%203.1-5.3%204.2-1.2.6-2.6%201-3.9%201l-23.2-.1c-1.2%200-2.3%201.3-3.2%202.9-.4.8-.9%201.7-1.3%202.5-.6%201.3-2.2%204.7-.2%205.3z%22%20class%3D%22a%22%2F%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M97.7%2023.8c0%20.5%201.3%205.8%202.3%208.6.7%201.6%202.1%201.6%203.9%201.4.9%203.4%202.4%206.8%205.2%209v.1c-1.8%201.2-11.2%2014.7-11.2%2014.7-5.2%208.5-.3%2018.1%201.9%2026.1%203%2010.7%204.3%2020.9%2013.3%2028.7%202.3%202%204.8%207.3.5%2013.6l-48.3%2058c-.7.8-1.7%201.8-2.9%202.6-1.9%201.4-4.2%202.7-6.7%202.7l-23.2-.1c-1.2%200-2.2%201.2-3.1%202.8l-.1.1c-.4.8-.9%201.7-1.3%202.5-.6%201.3-2.4%205.3.5%205.3h30.8c2.1%200%204.1-1.2%205.7-2.7.4-.4%2046.1-54.9%2046.1-54.9%200%202.7.8%2011.8%201.5%2013.5%202.1%205.6%2019%2021.5%2023.4%2027.4%200%200-11.4%205.3-12.1%207.1-.7%201.8-.1%204.4.3%205.1.4.7%201.5%201.3%201.7%201.4.4.7%201.5%203%203.5%203h31.1c1.2-.1%201.4-.7%201.1-1.1l-3.2-6.2-.1-1.2c.2-1%20.9-1.8.7-3.1%200%200-11.6-28-12.5-29.9-.7-1.5-4.5-7.9-4.5-7.9.9-.6%2014.2-19%2019.2-23.9%202.2%203.6%208.4%2018.5%2015.3%2024.1%2016.6%2013.3%2038.8%2033.3%2038.8%2033.3-3.7%201.3-6%204.8-6.5%206.3-.8%202.4-.2%204.4.3%205.1.5.7%201.8%201.5%201.8%201.5.3.4%201.4%203.1%203.6%203.1H246c1.8%200%202.1-.7%201.8-1.1l-5.4-7.5c-.1-1%20.3-1.8-.3-3.1%200%200-15.7-26.2-21.5-34-7.3-9.5-17.8-17.5-19.2-25.1-1.4-7.6-6.8-30.9-14.6-41.2-8-10.7-3.6-14.6-1.3-17.5.5-.6%206.2-7.4%207.1-8.9%201.3-1.9%203.9-7.4%204.1-12.4.1-1.5-.1-3-.5-4.4-.7-2.1-2.2-4-4.2-5.9-4.8-4.6-19-17.4-30.7-17.5-3.9%200-5.6-.3-10.9.8-4.3.9-6.6%201.7-10.5%203.6%200%200-6.1%202.8-7.8%202.8%200%200-3.2.5-3.5-5.1-.3-4.6-.3-8.1-1-9.6-.3-.8-.6-1.5-1-2.2-.7-1.2-1.5-2.2-2.4-2.9-1.4-1.1-3-1.6-5.1-2.1l-1.7-.3c-3.3-.4-9.1%201-11.2%202.7-1.6%201.3-6.3%205.9-7.5%208.8-.7%202-.9%204.4-1%206z%22%20class%3D%22a%22%2F%3E%3C%2Fsvg%3E)
   }
@@ -59,9 +56,9 @@ body * + * { margin-top: var(--gap) }
 .nomargin * + * { margin-top: 0 }
 
 /* Shared  */
-button,[role='button'], input[type='submit'], input[type='reset'], input[type='button'], article, aside, blockquote, pre, code, mark, samp, kbd, time, input, textarea, select, fieldset, img, video { border-radius: .1875rem }
+button,[role='button'], input[type='submit'], input[type='reset'], input[type='button'], table, article, aside, blockquote, pre, code, mark, samp, kbd, time, input, textarea, select, fieldset, img, video { border-radius: 2px }
 button, [role='button'], input[type='submit'], input[type='reset'], input[type='button'], pre, samp { padding: calc(var(--gap) * .5) }
-button,[role='button'], input[type='submit'], input[type='reset'], input[type='button'], code, mark, kbd, time, pre, samp, aside, blockquote, tr:nth-child(odd) td { color: var(--color-button); background: var(--bg-button) }
+button,[role='button'], input[type='submit'], input[type='reset'], input[type='button'], code, mark, kbd, time, pre, samp, aside, blockquote, table { color: var(--color-button); background: var(--bg-button) }
 dt, details > summary, li, option, input, textarea, select { margin: 0 }
 article, input, textarea, select, fieldset, fieldset { border: 1px solid var(--border-color) }
 h1, h2, h3, h4, h5, h6, h1 small, h2 small, h3 small, button,[role='button'], input[type='submit'], input[type='reset'], input[type='button'] { font-weight: 400 }
@@ -80,13 +77,17 @@ hr { height: 1px; background: var(--border-color); border-style: none }
 dd { margin: 0 0 var(--gap); white-space: pre-wrap }
 ol, ul { list-style-position: inside; margin: var(--size1) 0 0 var(--size2) }
 ol > li > ol, ul > li > ul { margin: 0; padding: 0 calc(var(--gap) * 1.5) }
-table { width: 100%; max-width: 100%; border-collapse: collapse }
-th, td { padding: var(--size0) var(--size1); text-align: left; vertical-align: top }
-thead th { border-bottom: solid var(--size0) dimgray }
-tfoot th { border-top: solid var(--size0) dimgray }
 blockquote { padding-left: var(--gap); border-left: solid .25rem dimgray }
 blockquote, aside, article, .wrap { padding: calc(var(--gap) * .75) var(--gap) }
 dt, details > summary, th, label { font-weight: 700 }
+
+/* Tables */
+table { width: 100%; max-width: 100%; border-collapse: collapse }
+table caption { color: var(--color-text) }
+th, td { padding: var(--size0) var(--size1); text-align: left; vertical-align: top }
+thead th { border-bottom: solid var(--size0) dimgray }
+tfoot th { border-top: solid var(--size0) dimgray }
+tr:nth-child(odd) td { background-color: whitesmoke }
 
 /* Inline Text */
 a { color: var(--color-link) }
@@ -135,9 +136,8 @@ figcaption { margin-top: 0 }
 .toggle-hidden { position: absolute; left: -9999px }
 .toggle:checked + * { display: block }
 
-.topbar { border-bottom: 1px solid var(--border-color); box-shadow: 0 0var(--size1) 0.75rem rgb(0 0 0 / 5%) }
+.topbar { border-bottom: 1px solid var(--border-color) }
 .topbar-menu { display: flex; align-items: center }
-.topbar-menu a { color: inherit }
 .topbar-menu-brand { display: block; width: clamp(3em, 4em, 4em); height: clamp(3em, 4em, 4em); background: var(--logo) }
 .topbar-menu-actions { flex-grow: 1; text-align: right }
 .topbar-menu-actions, .topbar-tray { margin: 0 }
@@ -462,7 +462,6 @@ figcaption { margin-top: 0 }
 
 .black { color: black }
 .blue { color: blue }
-.darkgray { color: var(--darkgray) }
 .gold { color: gold }
 .gray { color: dimgray }
 .green { color: forestgreen }
@@ -477,7 +476,6 @@ figcaption { margin-top: 0 }
 
 .bg-black { background-color: black }
 .bg-blue { background-color: blue }
-.bg-darkgray { background-color: var(--darkgray) }
 .bg-gold { background-color: gold }
 .bg-gray { background-color: dimgray }
 .bg-green { background-color: forestgreen }
@@ -492,7 +490,6 @@ figcaption { margin-top: 0 }
 
 .b--black { border-color: black }
 .b--blue { border-color: blue }
-.b--darkgray { border-color: var(--darkgray) }
 .b--gold { border-color: gold }
 .b--gray { border-color: dimgray }
 .b--green { border-color: forestgreen }
@@ -824,7 +821,6 @@ figcaption { margin-top: 0 }
 
   .black-l { color: black }
   .blue-l { color: blue }
-  .darkgray-l { color: var(--darkgray) }
   .gold-l { color: gold }
   .gray-l { color: dimgray }
   .green-l { color: forestgreen }
@@ -839,7 +835,6 @@ figcaption { margin-top: 0 }
 
   .bg-black-l { background-color: black }
   .bg-blue-l { background-color: blue }
-  .bg-darkgray-l { background-color: var(--darkgray) }
   .bg-gold-l { background-color: gold }
   .bg-gray-l { background-color: dimgray }
   .bg-green-l { background-color: forestgreen }
@@ -854,7 +849,6 @@ figcaption { margin-top: 0 }
 
   .b--black-l { border-color: black }
   .b--blue-l { border-color: blue }
-  .b--darkgray-l { border-color: var(--darkgray) }
   .b--gold-l { border-color: gold }
   .b--gray-l { border-color: dimgray }
   .b--green-l { border-color: forestgreen }

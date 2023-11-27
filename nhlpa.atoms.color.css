@@ -1,6 +1,5 @@
 .black { color: black }
 .blue { color: blue }
-.darkgray { color: var(--darkgray) }
 .gold { color: gold }
 .gray { color: dimgray }
 .green { color: forestgreen }
@@ -15,7 +14,6 @@
 
 .bg-black { background-color: black }
 .bg-blue { background-color: blue }
-.bg-darkgray { background-color: var(--darkgray) }
 .bg-gold { background-color: gold }
 .bg-gray { background-color: dimgray }
 .bg-green { background-color: forestgreen }
@@ -30,7 +28,6 @@
 
 .b--black { border-color: black }
 .b--blue { border-color: blue }
-.b--darkgray { border-color: var(--darkgray) }
 .b--gold { border-color: gold }
 .b--gray { border-color: dimgray }
 .b--green { border-color: forestgreen }

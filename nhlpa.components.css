@@ -10,9 +10,8 @@
 .toggle-hidden { position: absolute; left: -9999px }
 .toggle:checked + * { display: block }
 
-.topbar { border-bottom: 1px solid var(--border-color); box-shadow: 0 0var(--size1) 0.75rem rgb(0 0 0 / 5%) }
+.topbar { border-bottom: 1px solid var(--border-color) }
 .topbar-menu { display: flex; align-items: center }
-.topbar-menu a { color: inherit }
 .topbar-menu-brand { display: block; width: clamp(3em, 4em, 4em); height: clamp(3em, 4em, 4em); background: var(--logo) }
 .topbar-menu-actions { flex-grow: 1; text-align: right }
 .topbar-menu-actions, .topbar-tray { margin: 0 }
