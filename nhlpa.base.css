@@ -62,6 +62,8 @@ button,[role='button'], input[type='submit'], input[type='reset'], input[type='b
 dt, details > summary, li, option, input, textarea, select { margin: 0 }
 article, input, textarea, select, fieldset, fieldset { border: 1px solid var(--border-color) }
 h1, h2, h3, h4, h5, h6, h1 small, h2 small, h3 small, button,[role='button'], input[type='submit'], input[type='reset'], input[type='button'] { font-weight: 400 }
+code, samp, kbd, table { font-family: Consolas, monaco, monospace; font-size: 98% }
+blockquote, aside, article, .wrap { padding: calc(var(--gap) * .75) var(--gap) }
 
 /* Text */
 h1, h2, h3, h4, h5, h6 { line-height: var(--lh-title) }
@@ -78,13 +80,13 @@ dd { margin: 0 0 var(--gap); white-space: pre-wrap }
 ol, ul { list-style-position: inside; margin: var(--size1) 0 0 var(--size2) }
 ol > li > ol, ul > li > ul { margin: 0; padding: 0 calc(var(--gap) * 1.5) }
 blockquote { padding-left: var(--gap); border-left: solid .25rem dimgray }
-blockquote, aside, article, .wrap { padding: calc(var(--gap) * .75) var(--gap) }
-dt, details > summary, th, label { font-weight: 700 }
+dt, details > summary { font-weight: 700 }
 
 /* Tables */
-table { width: 100%; max-width: 100%; border-collapse: collapse }
+table { width: 100%; max-width: 100%; border-collapse: collapse; font-family: Consolas, monaco, monospace; }
 table caption { color: var(--color-text) }
 th, td { padding: var(--size0) var(--size1); text-align: left; vertical-align: top }
+th { font-weight: 700 }
 thead th { border-bottom: solid var(--size0) dimgray }
 tfoot th { border-top: solid var(--size0) dimgray }
 tr:nth-child(odd) td { background-color: whitesmoke }
@@ -92,7 +94,6 @@ tr:nth-child(odd) td { background-color: whitesmoke }
 /* Inline Text */
 a { color: var(--color-link) }
 code, mark, kbd, time { padding: 0 var(--size1) }
-code, samp, kbd { font-family: monospace }
 mark, time { color: black }
 mark { background: gold }
 time { background: lightcyan }
@@ -108,7 +109,7 @@ input, button, textarea, select, fieldset { font: inherit }
 textarea, select, input:not([type=button]):not([type=checkbox]):not([type=color]):not([type=file]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit]) { display: block; width: 100%; background: var(--bg-body) }
 input, textarea { padding: .3125rem var(--size2) }
 input[type=checkbox], input[type=radio] { vertical-align: middle; position: relative; bottom: 2px }
-label { display: block; margin-bottom: var(--size1) }
+label { display: block; margin-bottom: var(--size1); font-weight: 700 }
 form * + label { margin-top: var(--size2) }
 label > *:first-child { margin: var(--size1) 0 0 }
 fieldset { padding: var(--size2); margin: 0 0 1rem }
