@@ -62,12 +62,12 @@ button,[role='button'], input[type='submit'], input[type='reset'], input[type='b
 dt, details > summary, li, option, input, textarea, select { margin: 0 }
 article, input, textarea, select, fieldset, fieldset { border: 1px solid var(--border-color) }
 h1, h2, h3, h4, h5, h6, h1 small, h2 small, h3 small, button,[role='button'], input[type='submit'], input[type='reset'], input[type='button'] { font-weight: 400 }
-code, samp, kbd, table { font-family: Consolas, monaco, monospace; font-size: 98% }
+code, samp, kbd { font-family: Consolas, monaco, monospace; font-size: 98% }
 blockquote, aside, article, .wrap { padding: calc(var(--gap) * .75) var(--gap) }
 
 /* Text */
 h1, h2, h3, h4, h5, h6 { line-height: var(--lh-title) }
-h1 small, h2 small, h3 small { display: block; font-size: var(--fontsize7); opacity: .6 }
+h1 small, h2 small, h3 small { display: block; font-size: var(--fontsize7); color: dimgray }
 h1 { font-size: var(--fontsize1) }
 h2 { font-size: var(--fontsize2) }
 h3 { font-size: var(--fontsize3) }
@@ -83,7 +83,7 @@ blockquote { padding-left: var(--gap); border-left: solid .25rem dimgray }
 dt, details > summary { font-weight: 700 }
 
 /* Tables */
-table { width: 100%; max-width: 100%; border-collapse: collapse; font-family: Consolas, monaco, monospace; }
+table { width: 100%; max-width: 100%; border-collapse: collapse }
 table caption { color: var(--color-text) }
 th, td { padding: var(--size0) var(--size1); text-align: left; vertical-align: top }
 th { font-weight: 700 }
@@ -108,7 +108,7 @@ label, input, textarea, select, fieldset, button { line-height: var(--lh-solid) 
 input, button, textarea, select, fieldset { font: inherit }
 textarea, select, input:not([type=button]):not([type=checkbox]):not([type=color]):not([type=file]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit]) { display: block; width: 100%; background: var(--bg-body) }
 input, textarea { padding: .3125rem var(--size2) }
-input:valid, textarea:invalid { border: 1px dashed crimson }
+input:invalid, textarea:invalid { border: 1px dashed crimson }
 input[type=checkbox], input[type=radio] { vertical-align: middle; position: relative; bottom: 2px }
 label { display: block; margin-bottom: var(--size1); font-weight: 700 }
 form * + label { margin-top: var(--size2) }
