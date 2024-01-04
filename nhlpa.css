@@ -108,7 +108,7 @@ label, input, textarea, select, fieldset, button { line-height: var(--lh-solid) 
 input, button, textarea, select, fieldset { font: inherit }
 textarea, select, input:not([type=button]):not([type=checkbox]):not([type=color]):not([type=file]):not([type=radio]):not([type=range]):not([type=reset]):not([type=submit]) { display: block; width: 100%; background: var(--bg-body) }
 input, textarea { padding: .3125rem var(--size2) }
-input:invalid, textarea:invalid { border: 1px dashed crimson }
+input:user-invalid, select:user-invalid, textarea:user-invalid { border: 1px dashed crimson }
 input[type=checkbox], input[type=radio] { vertical-align: middle; position: relative; bottom: 2px }
 label { display: block; margin-bottom: var(--size1); font-weight: 700 }
 form * + label { margin-top: var(--size2) }
