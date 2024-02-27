@@ -86,7 +86,7 @@ th { font-weight: 700 }
 thead th { border-bottom: solid var(--size0) dimgray }
 tfoot th { border-top: solid var(--size0) dimgray }
 tr:nth-child(odd) td { background-color: var(--bg-button) }
-tr:hover td { background-color: #cdecff}
+tr:hover td { background-color: lightcyan; color: black }
 
 /* Inline Text */
 a { color: var(--color-link) }
