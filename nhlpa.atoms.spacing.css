@@ -9,24 +9,6 @@
 .ma7 { margin: var(--size7) }
 .center { margin-right: auto; margin-left: auto }
 
-.mv0 { margin-top: 0; margin-bottom: 0 }
-.mv1 { margin-top: var(--size1); margin-bottom: var(--size1) }
-.mv2 { margin-top: var(--size2); margin-bottom: var(--size2) }
-.mv3 { margin-top: var(--size3); margin-bottom: var(--size3) }
-.mv4 { margin-top: var(--size4); margin-bottom: var(--size4) }
-.mv5 { margin-top: var(--size5); margin-bottom: var(--size5) }
-.mv6 { margin-top: var(--size6); margin-bottom: var(--size6) }
-.mv7 { margin-top: var(--size7); margin-bottom: var(--size7) }
-
-.mh0 { margin-right: 0; margin-left: 0 }
-.mh1 { margin-right: var(--size1); margin-left: var(--size1) }
-.mh2 { margin-right: var(--size2); margin-left: var(--size2) }
-.mh3 { margin-right: var(--size3); margin-left: var(--size3) }
-.mh4 { margin-right: var(--size4); margin-left: var(--size4) }
-.mh5 { margin-right: var(--size5); margin-left: var(--size5) }
-.mh6 { margin-right: var(--size6); margin-left: var(--size6) }
-.mh7 { margin-right: var(--size7); margin-left: var(--size7) }
-
 .mt0 { margin-top: 0 }
 .mt1 { margin-top: var(--size1) }
 .mt2 { margin-top: var(--size2) }
@@ -71,24 +53,6 @@
 .pa5 { padding: var(--size5) }
 .pa6 { padding: var(--size6) }
 .pa7 { padding: var(--size7) }
-
-.pv0 { padding-top: 0; padding-bottom: 0 }
-.pv1 { padding-top: var(--size1); padding-bottom: var(--size1) }
-.pv2 { padding-top: var(--size2); padding-bottom: var(--size2) }
-.pv3 { padding-top: var(--size3); padding-bottom: var(--size3) }
-.pv4 { padding-top: var(--size4); padding-bottom: var(--size4) }
-.pv5 { padding-top: var(--size5); padding-bottom: var(--size5) }
-.pv6 { padding-top: var(--size6); padding-bottom: var(--size6) }
-.pv7 { padding-top: var(--size7); padding-bottom: var(--size7) }
-
-.ph0 { padding-right: 0; padding-left: 0 }
-.ph1 { padding-right: var(--size1); padding-left: var(--size1) }
-.ph2 { padding-right: var(--size2); padding-left: var(--size2) }
-.ph3 { padding-right: var(--size3); padding-left: var(--size3) }
-.ph4 { padding-right: var(--size4); padding-left: var(--size4) }
-.ph5 { padding-right: var(--size5); padding-left: var(--size5) }
-.ph6 { padding-right: var(--size6); padding-left: var(--size6) }
-.ph7 { padding-right: var(--size7); padding-left: var(--size7) }
 
 .pt0 { padding-top: 0 }
 .pt1 { padding-top: var(--size1) }
