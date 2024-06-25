@@ -1,10 +1,13 @@
 /* Components */
-.wrap-sm, .wrap-md, .wrap, .wrap-lg, .wrap-xl { margin-left: auto; margin-right: auto; padding: var(--size2) }
-.wrap-sm { max-width: 30rem }
-.wrap-md { max-width: 40rem }
-.wrap { max-width: 60rem }
-.wrap-lg { max-width: 80rem }
-.wrap-xl { max-width: 120rem }
+.logo { background: var(--logo) }
+
+.wrap-sm, .wrap-md, .wrap, .wrap-lg, .wrap-xl, .wrap-xxl { margin-left: auto; margin-right: auto; padding: var(--size2) }
+.wrap-sm { max-width: 36rem }
+.wrap-md { max-width: 48rem }
+.wrap { max-width: 62rem }
+.wrap-lg { max-width: 75rem }
+.wrap-xl { max-width: 87.5rem }
+.wrap-xxl { max-width: 105rem }
 
 .toggle + * { display: none }
 .toggle-hidden { position: absolute; left: -9999px }
@@ -16,4 +19,9 @@
 .topbar-menu-actions { flex-grow: 1; text-align: right }
 .topbar-menu-actions, .topbar-tray { margin: 0 }
 
-.logo { background: var(--logo) }
+
+nav:is(.breadcrumb, .links) ul { list-style-type: none; margin: 0; padding: 0 }
+nav:is(.breadcrumb, .links) ul li { display: inline }
+nav.breadcrumb ul li::before { content: ' → ' }
+nav.links ul li::before { content: ' - ' }
+nav:is(.breadcrumb, .links) ul li:first-child::before { content: '' }
